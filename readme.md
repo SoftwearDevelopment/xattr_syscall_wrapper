@@ -5,9 +5,9 @@ Wrappers for the syscalls getxattr, setxattr, removexattr and listxattr.
 ## Motivation
 
 There are `attr` and `getfattr`/`setfattr` which are standard parts of linux.
-Unfortunately they seem to do a lot of checking for the caller, to the effect
+Unfortunately, they seem to do a lot of checking for the caller, to the effect
 that only `getfattr` is capable of reading `system.cifs_acl` and neither `attr`
-nor `setfattr` where able to write it again. The same (probably) goes for other
+nor `setfattr` are able to write it again. The same (probably) goes for other
 system xattrs.
 
 This repository provides very basic wrappers around the syscalls and does zero
